@@ -1,0 +1,90 @@
+[
+  {
+    "line": 14,
+    "timestamp": "22/Sep/2026:08:18:22 +0200",
+    "ip": "172.16.4.12",
+    "threat_type": "SQL Injection",
+    "severity": "HIGH",
+    "raw_payload": "172.16.4.12 - - [22/Sep/2026:08:18:22 +0200] \"GET /products.php?id=1 UNION SELECT null,username,password FROM users HTTP/1.1\" 200 8421 \"-\" \"sqlmap/1.5\""
+  },
+  {
+    "line": 14,
+    "timestamp": "22/Sep/2026:08:18:22 +0200",
+    "ip": "172.16.4.12",
+    "threat_type": "Malicious Web Scanner",
+    "severity": "MEDIUM",
+    "raw_payload": "172.16.4.12 - - [22/Sep/2026:08:18:22 +0200] \"GET /products.php?id=1 UNION SELECT null,username,password FROM users HTTP/1.1\" 200 8421 \"-\" \"sqlmap/1.5\""
+  },
+  {
+    "line": 25,
+    "timestamp": "22/Sep/2026:08:31:05 +0200",
+    "ip": "172.16.4.12",
+    "threat_type": "SQL Injection",
+    "severity": "HIGH",
+    "raw_payload": "172.16.4.12 - - [22/Sep/2026:08:31:05 +0200] \"GET /search.php?q=test' UNION SELECT 1,2,schema_name FROM information_schema.schemata-- HTTP/1.1\" 200 6100 \"-\" \"Mozilla/5.0\""
+  },
+  {
+    "line": 27,
+    "timestamp": "22/Sep/2026:08:33:01 +0200",
+    "ip": "203.0.113.88",
+    "threat_type": "Path Traversal / LFI",
+    "severity": "CRITICAL",
+    "raw_payload": "203.0.113.88 - - [22/Sep/2026:08:33:01 +0200] \"GET /download.php?file=../../../../etc/passwd HTTP/1.1\" 200 2412 \"-\" \"Mozilla/5.0\""
+  },
+  {
+    "line": 28,
+    "timestamp": "22/Sep/2026:08:33:45 +0200",
+    "ip": "203.0.113.88",
+    "threat_type": "Path Traversal / LFI",
+    "severity": "CRITICAL",
+    "raw_payload": "203.0.113.88 - - [22/Sep/2026:08:33:45 +0200] \"GET /view.php?page=..%2F..%2F..%2Fwindows%2Fwin.ini HTTP/1.1\" 404 182 \"-\" \"Mozilla/5.0\""
+  },
+  {
+    "line": 31,
+    "timestamp": "22/Sep/2026:08:36:10 +0200",
+    "ip": "185.220.101.5",
+    "threat_type": "Cross-Site Scripting (XSS)",
+    "severity": "HIGH",
+    "raw_payload": "185.220.101.5 - - [22/Sep/2026:08:36:10 +0200] \"GET /comment.php?msg=<script>alert(document.cookie)</script> HTTP/1.1\" 200 3410 \"-\" \"Mozilla/5.0\""
+  },
+  {
+    "line": 32,
+    "timestamp": "22/Sep/2026:08:36:40 +0200",
+    "ip": "185.220.101.5",
+    "threat_type": "Cross-Site Scripting (XSS)",
+    "severity": "HIGH",
+    "raw_payload": "185.220.101.5 - - [22/Sep/2026:08:36:40 +0200] \"GET /profile.php?user=<img src=x onerror=alert('XSS')> HTTP/1.1\" 200 4120 \"-\" \"Mozilla/5.0\""
+  },
+  {
+    "line": 36,
+    "timestamp": "22/Sep/2026:08:40:19 +0200",
+    "ip": "198.51.100.77",
+    "threat_type": "SQL Injection",
+    "severity": "HIGH",
+    "raw_payload": "198.51.100.77 - - [22/Sep/2026:08:40:19 +0200] \"GET /items.php?cat=5 UNION SELECT id,email,pass FROM accounts HTTP/1.1\" 200 7312 \"-\" \"sqlmap/1.5\""
+  },
+  {
+    "line": 36,
+    "timestamp": "22/Sep/2026:08:40:19 +0200",
+    "ip": "198.51.100.77",
+    "threat_type": "Malicious Web Scanner",
+    "severity": "MEDIUM",
+    "raw_payload": "198.51.100.77 - - [22/Sep/2026:08:40:19 +0200] \"GET /items.php?cat=5 UNION SELECT id,email,pass FROM accounts HTTP/1.1\" 200 7312 \"-\" \"sqlmap/1.5\""
+  },
+  {
+    "line": 37,
+    "timestamp": "22/Sep/2026:08:41:05 +0200",
+    "ip": "45.33.32.156",
+    "threat_type": "Malicious Web Scanner",
+    "severity": "MEDIUM",
+    "raw_payload": "45.33.32.156 - - [22/Sep/2026:08:41:05 +0200] \"GET /login.php?user=admin' OR '1'='1 HTTP/1.1\" 200 8120 \"-\" \"Nikto/2.1.6\""
+  },
+  {
+    "line": "N/A (Multi-event)",
+    "timestamp": "Aggregated",
+    "ip": "10.0.0.50",
+    "threat_type": "Brute Force Authentication",
+    "severity": "HIGH",
+    "details": "6 failed 401 Unauthorized attempts"
+  }
+]
