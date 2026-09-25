@@ -32,3 +32,6 @@ python scanner.py
 
 ## Demo Video
 - [YouTube Demo Video](https://youtu.be/MFEk9VR_X4M)
+
+## Verification Code
+`WTC-7JV6NBLA`
